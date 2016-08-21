@@ -1,8 +1,8 @@
 var util = require('hexo-util');
 
-hexo.extend.generator.register('tipue-search-json', hexo_generator_json_content);
+hexo.extend.generator.register('tipue-search-json', hexo_generator_tipue_search_json);
 
-function hexo_generator_json_content(site) {
+function hexo_generator_tipue_search_json(site) {
     var minify = function (str) {
             return util.stripHTML(str).trim().replace(/\n/g, ' ').replace(/\s+/g, ' ');
         },

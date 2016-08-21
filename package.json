@@ -1,0 +1,24 @@
+{
+  "name": "hexo-generator-tipue-search-json",
+  "version": "1.0.0",
+  "description": "Generate JSON for tipue search",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhouhao/Hexo-Tipue-Search-Json.git"
+  },
+  "keywords": [
+    "hexo",
+    "tipue",
+    "search"
+  ],
+  "author": "hzhou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhouhao/Hexo-Tipue-Search-Json/issues"
+  },
+  "homepage": "https://github.com/zhouhao/Hexo-Tipue-Search-Json#readme"
+}
