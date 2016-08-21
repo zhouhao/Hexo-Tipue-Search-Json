@@ -48,7 +48,7 @@ function hexo_generator_tipue_search_json(site) {
 
 
     return {
-        path: 'tipuesearch_content.js',
+        path: '/tipuesearch/tipuesearch_content.json',
         data: JSON.stringify(json)
     };
 }
