@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/zhouhao/Hexo-Tipue-Search-Json/issues"
   },
-  "homepage": "https://github.com/zhouhao/Hexo-Tipue-Search-Json#readme"
+  "homepage": "https://github.com/zhouhao/Hexo-Tipue-Search-Json#readme",
+  "dependencies": {
+    "hexo-util": "latest"
+  }
 }
