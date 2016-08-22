@@ -1,6 +1,6 @@
 {
   "name": "hexo-generator-tipue-search-json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate JSON for tipue search",
   "main": "index.js",
   "scripts": {
