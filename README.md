@@ -14,8 +14,7 @@ npm install hexo-generator-tipue-search-json --save
 
 ## How to configure (You can do your customization)
 1. Download Tipue Search zip from [here](http://www.tipue.com/search/tipuesearch.zip), unzip it, and copy `/tipuesearch` to your `${theme_dir}/source`
-2. find the main content div(different theme may have different `id` or `class`), 
-    <img src="http://d.pr/i/1hTzv+" style="width:400px;"/>
+2. find the main content div(different theme may have different `id` or `class`), <br/><img src="https://raw.githubusercontent.com/zhouhao/s/master/img/hexo-json-main-div.png" style="width:400px;"/>
     in my example above, it should be ` <div id="content" role="main">`(find the code here: [layout.ejs](https://gitlab.com/zhouhao/zhouhao.gitlab.io/blob/master/themes/cyanstyle/layout/layout.ejs#L8)), then add `<div id="tipue_search_content" style="display: none"></div>` above it.
      ```html
      <div id="tipue_search_content" style="display: none"></div>
@@ -55,12 +54,13 @@ npm install hexo-generator-tipue-search-json --save
         });
     </script>
     ```
-4. Change `properties` for search box, and make it as: ([demo link](https://gitlab.com/zhouhao/zhouhao.gitlab.io/blob/master/themes/cyanstyle/layout/_widget/search.ejs))
-    ```
+4. Change `properties` for search box, and make it as: ([demo code link](https://gitlab.com/zhouhao/zhouhao.gitlab.io/blob/master/themes/cyanstyle/layout/_widget/search.ejs)).
+      
+    ```html
     <form id="search-form">
       <input  type="text" name="q" id="tipue_search_input" autocomplete="off" required placeholder="<%= __('search') %>" style="width:80%;" />
     </form>
-    ```
+     ```
     
 ## Thanks For
 
