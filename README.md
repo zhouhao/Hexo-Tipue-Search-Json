@@ -61,7 +61,13 @@ npm install hexo-generator-tipue-search-json --save
       <input  type="text" name="q" id="tipue_search_input" autocomplete="off" required placeholder="<%= __('search') %>" style="width:80%;" />
     </form>
      ```
-    
+
+## Changelog
+
+`1.2.0` - include pages into generated Json
+`1.1.0` - Only posts are included in generated Json
+
+
 ## Thanks For
 
 [hexo-generator-json-content](https://github.com/alexbruno/hexo-generator-json-content)
