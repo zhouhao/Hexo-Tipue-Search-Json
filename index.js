@@ -20,6 +20,7 @@ function hexo_generator_tipue_search_json(site) {
     var catags = function (item) {
             return item.name.replace(/\s+/g, '-').toLowerCase();
         },
+
         postsContent = site.posts.sort('-date').filter(function (post) {
             return post.published;
         }).map(function (post) {
@@ -42,10 +43,28 @@ function hexo_generator_tipue_search_json(site) {
             });
 
             return actualPost;
+        }),
+
+    pagesContent = site.pages.sort('-date').map(function (page) {
+        var actualPage = {};
+
+        Object.getOwnPropertyNames(keys).forEach(function (item) {
+            switch (item) {
+                case 'text':
+                    return actualPage[item] = minify(page.content);
+
+                case 'url':
+                    return actualPage[item] = '/' + page['path'];
+
+                default:
+                    return actualPage[item] = page[item];
+            }
         });
+        actualPage.tags = "";
+        return actualPage;
+    });
 
-    json.pages = postsContent;
-
+    json.pages = postsContent.concat(pagesContent);
 
     return {
         path: '/tipuesearch/tipuesearch_content.json',
