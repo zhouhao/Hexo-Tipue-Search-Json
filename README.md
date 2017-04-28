@@ -13,7 +13,8 @@ npm install hexo-generator-tipue-search-json --save
 ```
 
 ## How to configure (You can do your customization)
-1. Download Tipue Search zip from [here](http://www.tipue.com/search/tipuesearch.zip), unzip it, and copy `/tipuesearch` to your `${theme_dir}/source`
+1. Download Tipue Search zip from [here](http://www.tipue.com/search/tipuesearch.zip), unzip it, and copy `/tipuesearch` to your `${theme_dir}/source`   
+    a. A modified and **Chinese-Character-friendly** version of [Tipue Search](https://github.com/zhouhao/Tipue-Search) 
 2. find the main content div(different theme may have different `id` or `class`), <br/><img src="https://raw.githubusercontent.com/zhouhao/s/master/img/hexo-json-main-div.png" style="width:400px;"/>
     in my example above, it should be ` <div id="content" role="main">`(find the code here: [layout.ejs](https://gitlab.com/zhouhao/zhouhao.gitlab.io/blob/master/themes/cyanstyle/layout/layout.ejs#L8)), then add `<div id="tipue_search_content" style="display: none"></div>` above it.
      ```html
@@ -64,7 +65,8 @@ npm install hexo-generator-tipue-search-json --save
 
 ## Changelog
 
-`1.2.0` - include pages into generated Json
+`1.2.0` - include pages into generated Json   
+       **Migration from old version**: Just `npm install` the latest version, no other change needed in your code base    
 `1.1.0` - Only posts are included in generated Json
 
 
