@@ -35,7 +35,7 @@ function hexo_generator_tipue_search_json(site) {
                         return actualPost[item] = post.tags.map(catags).join(' ');
 
                     case 'url':
-                        return actualPost[item] = '/' + post['path'];
+                        return actualPost[item] = hexo.config.root + post['path'];
 
                     default:
                         return actualPost[item] = post[item];
@@ -54,7 +54,7 @@ function hexo_generator_tipue_search_json(site) {
                     return actualPage[item] = minify(page.content);
 
                 case 'url':
-                    return actualPage[item] = '/' + page['path'];
+                    return actualPage[item] = hexo.config.root + page['path'];
 
                 default:
                     return actualPage[item] = page[item];
