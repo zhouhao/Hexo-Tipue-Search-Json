@@ -2,15 +2,17 @@
 
 A [Hexo plugin](https://hexo.io/plugins/) to generate JSON content for [Tipue Search](http://www.tipue.com/search/docs/?d=6).
 
-A demo here: https://hzhou.me
+A demo here: https://hzhou.me/search/
 
 ## How to install
 
 Add plugin to Hexo:
 
-```
+```bash
 npm install hexo-generator-tipue-search-json --save
 ```
+## How to configure as a separate search page
+You can read this hexo theme: [hexo-theme-apollo-plus](https://github.com/zhouhao/hexo-theme-apollo-plus) for more details.
 
 ## How to configure (You can do your customization)
 1. Download Tipue Search zip from [here](http://www.tipue.com/search/tipuesearch.zip), unzip it, and copy `/tipuesearch` to your `${theme_dir}/source`   
@@ -64,7 +66,7 @@ npm install hexo-generator-tipue-search-json --save
      ```
 
 ## Changelog
-
+`1.2.1` - bugfix: read root path from config file, rather than `'/'`   [#3](https://github.com/zhouhao/Hexo-Tipue-Search-Json/pull/3)  **Thanks to [@spkingr](https://github.com/spkingr)**      
 `1.2.0` - include pages into generated Json   
        **Migration from old version**: Just `npm install` the latest version, no other change needed in your code base    
 `1.1.0` - Only posts are included in generated Json
